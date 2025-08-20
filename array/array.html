@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        
+        /*====================================
+             array   is a mutable in js
+       ==================================== */
+
+       // basic example
+
+       let array = [97,84,78,32,66,49,51,23,15];
+       //array = array.toString()  // this is method for convert in string
+       console.log(array);
+       //console.log(array.length); // length is property  & method is do work
+       console.log(typeof array); // object typeof
+       console.log(array[10]); // position
+       //console.log(array.replace(97,20));
+       array[0] = 21;
+       console.log(array);
+
+       /*====================================
+             looping over an array   
+       ==================================== */
+
+       // example
+
+    //    let heroes = ["ironman","superhero","spiderman","blackman","hulk","avengers"];
+    //    console.log(heroes[2]); 
+
+    //    for(let i=0;i<heroes.length;i++){
+    //     console.log(heroes);
+    //    }
+
+
+       /*====================================
+                     for of 
+       ==================================== */
+
+    //    for(let hero of heroes) {
+    //     console.log(hero);
+    //    }
+
+       // example
+
+       let students = [85,97,44,37,76,60];
+       let sum=0;
+       
+       for(let val of students){
+        sum=sum+val;
+       console.log(sum);
+       }
+       let avg = sum / students.length;
+       console.log(`avg mark of the class is ${avg}`);
+
+      // example
+
+      let items = [250,645,954,1479,1500];
+    
+      let i = 0;
+    for(let value of items){
+
+      console.log(`value at index ${i} = ${value}`);
+      let offer = value / 10;
+      items[i] = items[i] - offer;  
+      console.log(`value after offer = ${items[i]}`);
+      i++;
+    }
+    
+    //example
+
+    for(let i=0;i<items.length;i++){
+      let offer = items[i]/10;
+      items[i] -= offer;
+    }
+
+    console.log(items);
+
+    </script>
+</body>
+</html>
