@@ -1,0 +1,32 @@
+/* h1{
+    color: orangered;
+    
+}
+
+p{
+    color:rgb(36, 60, 148)
+}
+body{
+  background-color: aqua;
+}
+#myId{
+    color:brown;
+}
+#id{
+    color: blueviolet;
+}
+.heading{
+     color: red;
+} */
+/* #h1{
+    visibility: hidden;
+} */
+
+.box{
+height: 100px;
+width: 100px;
+border:1px solid black;
+margin:5px;
+background-color:burlywood;
+text-align:center
+}
