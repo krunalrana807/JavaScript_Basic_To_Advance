@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      // ==> forEach loop in arrays , is foreach  same as a for loop
+
+      // ==>   only use for array not for string
+
+      // ==> foreach is consist value of  array
+
+      // ==> if your project consist array use a forEach()
+
+      //    syntax :
+
+      //    array.forEach(callBackfunction)
+
+      // function wel(num) {
+      //     return num;
+      // }
+
+      // console.log(55);
+
+      // example
+
+      let array = [1, 2, 3, 4, 5];
+
+      // array.forEach(function printVal(array){ // value at each index means foreach take one by one value and print
+      //     console.log(array);
+      // })
+
+      let Array = [1, 2, 3, 4, 5];
+
+      //  Array = ()=>{
+      //     console.log(Array)
+      // }
+
+      Array.forEach(function fun(i) {
+        //   i=i*2;
+        console.log(i * 2);
+      });
+
+      // console.log(Array);
+
+      // for(let i =0 ; i< Array.length; i++){
+      //    console.log(Array[i]*2);
+      // }
+
+      // example
+
+      let City = ["anand", "baroda", "ahm", "delhi"];
+
+      City.forEach((city) => {
+        console.log(city);
+      });
+
+      // example
+
+      let city = ["anand", "baroda", "ahm", "delhi"];
+
+      city.forEach(function print(city) {
+        console.log(city);
+      });
+
+      // function print(city){
+      //     console.log(city);
+      // }
+
+      // print(city)
+
+      city.forEach((e, idx, city) => {
+        // foreach is consist value of city array
+        console.log(e.toUpperCase()); // is foreach  same as a for loop
+        console.log(e.toLowerCase(), idx, city);
+        //  we use parameter as a (value,idx,array) and to print
+      });
+
+      /* ==========================================
+       important one questions in javascript for interview
+       
+       what is Higher Order Function :::::
+
+  ==>   to  called higher order function and methods to forEach Loop array.
+
+  ==> CollBack Function means paramete Function
+
+  ==>  where to see callback means foreach k under parameter function always 
+       called higher order function / method 
+
+  ==>  for example under,
+   ==========================================*/
+
+      // example  second trick = num**2
+
+      let num = [1, 2, 3, 4, 10];
+
+      num.forEach((num) => {
+        console.log(num * num);
+      });
+
+      // example  second trick calcSquar
+
+      let calcSquar = (num) => {
+        console.log(num * num);
+      };
+      // num = numb = [478,847] // avi rite pan thay
+      num.forEach(calcSquar);
+    </script>
+  </body>
+</html>

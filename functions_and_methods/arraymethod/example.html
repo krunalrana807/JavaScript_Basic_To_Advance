@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      // example
+
+      const marks = [78, 99, 45, 62, 91];
+
+      const newMark = marks.filter((score) => {
+        return score >= 90;
+      });
+
+      console.log(newMark);
+
+      // example
+
+      let n = prompt("input number");
+
+      let array = [];
+      for (let i = 1; i <= n; i++) {
+        array[i - 1] = i;
+      }
+
+      console.log(array);
+
+      // example
+
+      let sum = array.reduce((resu, curr) => {
+        return resu + curr;
+      });
+
+      console.log("sum =", sum);
+
+      // example
+
+      let factorial = array.reduce((resu, curr) => {
+        return resu * curr;
+      });
+
+      console.log("factorial =", factorial);
+      
+    </script>
+  </body>
+</html>

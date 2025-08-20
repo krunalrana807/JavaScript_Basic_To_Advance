@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      // parameter pass
+
+      function declare(msg) {
+        // <=(parameter)
+        console.log("parameter invoke in code: " + msg);
+      }
+
+      declare("Hello, this is a message!"); // argument
+
+      // example
+
+      function sum(a, b) {
+        console.log(a + b);
+      }
+
+      sum(10, 25);
+      sum(120.45, 451.87);
+
+      function value(a, b) {
+        // function parameter ==> like local variable ==> live up to block scope of function
+        c = a + b;
+        console.log("before return = ", a, b);
+        console.log("after return" + c);
+
+        return c; // not executed any code after return
+      }
+
+      let val = value(20, 48);
+      console.log(val);
+
+    </script>
+  </body>
+</html>

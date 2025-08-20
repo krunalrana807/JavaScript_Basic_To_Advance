@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+        
+      // Arrow function in js
+
+      // syntax:
+
+      // const functionName = (parameter1,parameter2)=>{
+      //     do some code of block
+      // }
+
+      // example
+
+      let multi = (x, y) => {
+        console.log(x * y);
+      };
+      multi(40, 4);
+
+      // example
+
+      const divided = (k, r) => {
+        // return k / r;
+        n = k / r;
+        return n; // return type
+      };
+
+      let m = divided(400, 200);
+      console.log(m);
+      // console.log(divided(400, 200)); // return type code in one line
+
+      // example
+
+      const division = (p, q) => {
+        console.log(p - q);
+      };
+      division(5000, 1124);
+
+      // example
+
+      function countVowel(str) {
+        let count = 0;
+        for (const char of str) {
+          if (
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u"
+          ) {
+            count++;
+          }
+        }
+        console.log(count);
+        // return count;
+      }
+
+      countVowel("venom");
+      // let v =  countVowel("venom");
+      //  console.log(v);
+
+      // example
+
+      const countVow = (str) => {
+        let count = 0;
+        for (const char of str) {
+          if (
+            char === "a" ||
+            char === "e" ||
+            char === "i" ||
+            char === "o" ||
+            char === "u"
+          ) {
+            count++;
+          }
+        }
+        console.log(count);
+      };
+
+      countVow("aeroplane");
+
+    </script>
+  </body>
+</html>

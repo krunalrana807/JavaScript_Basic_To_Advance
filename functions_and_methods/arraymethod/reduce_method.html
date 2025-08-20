@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      //     reduce Method
+
+      //  ==> it performs some operations & reduce the array to a single value.
+
+      //  ==> it returns that single value
+
+      // example
+
+      let num = [1, 2, 3, 4];
+
+      const output = num.reduce((res, curr) => {
+        return res + curr; // result + current = sum
+      });
+
+      console.log(output);
+
+      // example
+
+      let number = [7, 8, 9]; // large number return
+
+      let outPut = number.reduce((prev, curr) => {
+        return prev > curr ? prev : curr;
+      });
+
+      console.log(outPut); // 9
+      
+    </script>
+  </body>
+</html>

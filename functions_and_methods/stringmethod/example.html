@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+
+      // example
+
+      const username = prompt("Enter Your Full Name Without Space");
+
+      const str12 = "@";
+      const str13 = str12.concat(username);
+      const str14 = str13.length;
+      const str15 = str12.concat(username, str14);
+      console.log(str15);
+
+      //     or second trick
+
+      let user = prompt("enter name without space");
+
+      let combin = "@" + user + user.length;
+      console.log(combin);
+      
+    </script>
+  </body>
+</html>
