@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <script>
+      
+      // template literals in js
+
+      // syntax:
+      
+      //  variable = `full code you want print ${expression,variables} string text`
+      //          console.log("full code you want print", expression,variables, "string text")
+
+      // example literal string
+
+      let name = `computer engineer`; // backtits key
+      console.log(name);
+
+      // example
+
+      let obj = {
+        item: "pen",
+        price: 5,
+      };
+
+      let output = `the cost of ${obj.item} is ${obj.price} rupees`;
+
+      //console.log("the cost of ", obj.item, "is", obj.price,'rupees');
+
+      console.log(output);
+
+      // example
+
+      let addi = `number is ${1 + 8 + 1} = total`;
+      console.log(addi);
+
+      // example of escape carector
+
+      let str = `krunal\trana\nis\ta\ncomputer\tengineer`; // \n, \t
+      console.log(str);
+      console.log(str.length);
+
+    </script>
+  </body>
+</html>
