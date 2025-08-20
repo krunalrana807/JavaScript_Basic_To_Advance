@@ -1,0 +1,16 @@
+#btn {
+  color: red;
+  background-color: rgb(224, 224, 221);
+  border: 1px solid red;
+  font-size: medium;
+  margin-inline: 1px;
+ 
+}
+
+div{
+ justify-content: center;
+ display: flex;
+ align-items: center;
+ margin-top: 50px;
+ margin-left: -50px;
+}

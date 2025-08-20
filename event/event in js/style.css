@@ -1,0 +1,30 @@
+.container {
+  height: 150px;
+  width: 150px;
+  background-color: aqua;
+  border: 1.5px solid black;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#btn {
+  color: red;
+  background-color: rgb(224, 224, 221);
+  border: 1px solid red;
+  font-size: medium;
+  margin-inline: 1px;
+}
+
+#change{
+    margin-top: 45px;
+}
+
+#btn1 {
+  color: rgb(3, 19, 194);
+  background-color: rgb(224, 224, 221);
+  border: 1px solid rgb(28, 13, 191);
+  font-size: medium;
+  margin-inline: 1.9px;
+}

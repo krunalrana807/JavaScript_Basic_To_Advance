@@ -1,0 +1,20 @@
+button{
+  color: rgb(4, 0, 255);
+  background-color: rgb(251, 251, 243);
+  border: 1px solid rgb(0, 60, 255);
+  font-size: medium;
+  margin-inline: 1px;
+ 
+}
+  
+   /* use with class  */
+
+.dark{
+    background-color: black;
+    color: white;
+}
+
+.light{
+    background-color: white;
+    color: black;
+}
